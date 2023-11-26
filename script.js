@@ -209,3 +209,4 @@ submitBtn.addEventListener("click", saveHighscore);
 
 // adding the click event to the button!
 startBtn.addEventListener("click", startQuiz);
+}

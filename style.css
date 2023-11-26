@@ -12,20 +12,12 @@ body {
   margin: 100px auto 0 auto;
   max-width: 600px;
 }
-.start-page {
-  text-align: center;
-}
-.timer {
-  font-size: 20px;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
+/*  */
 .scores {
-  font-size: 0px;
+  position: absolute;
   top: 10px;
   left: 10px;
-  position: absolute;
+  font-size: 0px;
 }
 .scores a {
   text-decoration: none;
@@ -42,11 +34,12 @@ body {
   content: "";
   transition: 0.5s;
 }
-.scores a:hover {
-  color: black;
-}
 .scores a:hover::after {
   width: 100%;
+}
+
+.scores a:hover {
+  color: black;
 }
 
 ol {
@@ -54,6 +47,23 @@ ol {
   padding-left: 0px;
   max-height: 400px;
 }
+
+.start-page {
+  text-align: center;
+}
+.timer {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+
+
+
+
+
+
 .start {
   text-align: center;
 }
