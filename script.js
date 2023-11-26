@@ -81,45 +81,38 @@ function startQuiz() {
             timerEl.textContent = secondsLeft;
             startQuestion();
        }     
+    //    look back to module 4 sections!!
 function startQuestion() {
 
-    // get first question
     var activeQuestion = questions[activeQuestionIndex];
 
-    // update title with active question
     var titleEl = document.querySelector("#title")
     titleEl.textContent = activeQuestion.title;
 
-    // clear previous choices
     choicesEl.innerHTML = "";
-
-    // loop over choices    
+//    stack overflow help
     activeQuestion.choices.forEach(function(choice) {
-
-        // creat button for each choice
+// Ask tutor for help with this part
         var choiceButton = document.createElement("button");
         choiceButton.setAttribute("class", "choice");
         choiceButton.setAttribute("value", choice);
 
         choiceButton.textContent = choice;
-
-        // click event for each choice
         choiceButton.addEventListener("click", choiceClick);
-
-        // disply on the page
         choicesEl.appendChild(choiceButton);
     });
 }
 
 function choiceClick() {
     if (this.value !== questions[activeQuestionIndex].answer) {
-        // diduct time
+    //    IF you answer incorrectly,youre going to get time deducted from your quiz time!!
+
         secondsLeft -= 15;
 
         if(secondsLeft < 0) {
             secondsLeft = 0;
         }
-        // How many second left on the page.
+        // How many seconds left on the page.
         // if correct, then the text will come out green.
         // if incorrect, then the text will be red
         timerEl.textContent = secondsLeft;
@@ -132,7 +125,6 @@ function choiceClick() {
         feedbackEl.style.fontSize = "300%";
     }
 
-    // displying coorect/wrong 
     feedbackEl.setAttribute("class", "feedback");
     setTimeout(function() {
         feedbackEl.setAttribute("class", "feedback hide");
@@ -170,7 +162,7 @@ function setTime() {
     if (secondsLeft <= 0) {
        endQuestion();               
     }
-
+}
 // Here we are defining the function of savehighscore.
 function saveHighscore() {
 // we can check this on inspect.
@@ -209,4 +201,3 @@ submitBtn.addEventListener("click", saveHighscore);
 
 // adding the click event to the button!
 startBtn.addEventListener("click", startQuiz);
-}
