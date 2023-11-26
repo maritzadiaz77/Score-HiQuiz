@@ -1,0 +1,17 @@
+/* /* This asterisk means that it will affect the whole page */
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(231, 74, 231);
+}
+.container{
+    margin: 100px auto 0 auto;
+    max-width: 600px;
+}
+.start-page{
+    text-align: center;
+}
