@@ -1,17 +1,101 @@
 /* /* This asterisk means that it will affect the whole page */
-*{
-    margin:0;
-    padding:0;
-    font-family:Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
-body{
-    background: rgb(231, 74, 231);
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-.container{
-    margin: 100px auto 0 auto;
-    max-width: 600px;
+.container {
+  margin: 100px auto 0 auto;
+  max-width: 600px;
 }
-.start-page{
-    text-align: center;
+.start-page {
+  text-align: center;
+}
+.timer {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.scores {
+  font-size: 0px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+.scores a {
+  text-decoration: none;
+  color: purple;
+  transition: color 0.5s;
+}
+.scores a::after {
+  background: black;
+  left: 0;
+  bottom: -6px;
+  height: 3px;
+  width: 0;
+  position: absolute;
+  content: "";
+  transition: 0.5s;
+}
+.scores a:hover {
+  color: black;
+}
+.scores a:hover::after {
+  width: 100%;
+}
+
+ol {
+  overflow: auto;
+  padding-left: 0px;
+  max-height: 400px;
+}
+.start {
+  text-align: center;
+}
+/* Buttons */
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: purple;
+  color: #ffff;
+  font-size: 100%;
+  border-radius: 80px;
+  padding: 3px 10px;
+  border: 0;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+/* This is very important, this is for the questions. */
+button:hover {
+  background-color: rgb(127, 157, 143);
+}
+input[type="text"] {
+  font-size: 100%;
+}
+li:nth-child(odd) {
+  background-color: light pink;
+}
+li {
+  padding: 5px;
+  list-style: decimal inside none;
+}
+.hide {
+  display: none;
+}
+.choices button {
+  display: block;
+}
+.feedback {
+  color: gray;
+  border-top: 2px solid lightpink;
+  font-size: 120%;
+  padding-top: 10px;
+  margin-top: 20px;
+  font-style: normal;
 }

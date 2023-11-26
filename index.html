@@ -29,9 +29,19 @@
         </section>
 
 <!-- This is the scoring section. -->
+<section id="save-score" class="hide">
+    <h2>All done!</h2>
+    <p>Your final score is <span id="final-score"></span></p>
+    <p>
+        Enter initials: <input type="text" id="initials" max="3">
+        <button id="submit">Submit</button>
+    </p>
+</section> 
+<section id="feedback" class="feedback hide"></section> 
+</section>
 
-
-
+<!-- Here i connected both of my js files. Very important -->
   <script src="script.js"></script>  
+  <script src="HighScores.js"></script>
 </body>
 </html>
