@@ -12,11 +12,11 @@ In order to get to my project, you will just need to click to my deployed link p
 
 
 Here is the deployed link.
-
+https://maritzadiaz77.github.io/Score-HiQuiz/ 
 
 ## Credits
 
-Extensively used W3Schools Online Web Tutorials and StackOverflow which helped so much.What mostly helped were tutors.
+Extensively used W3Schools Online Web Tutorials and StackOverflow which helped so much.What mostly helped were tutors!
 ## License
 
 There is no license for this repository.
